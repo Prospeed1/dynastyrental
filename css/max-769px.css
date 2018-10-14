@@ -38,6 +38,21 @@
             font-weight:bold;
              font-size:1.1em;
         }
+        figure {
+            width:100%;
+            margin-top:0px;
+            position:relative;
+            top:-600px;
+            left:0px;
+        }
+        .booth-types {
+             
+            position:relative;
+            width:100%;
+            height:300px;
+            border-top-style:solid;
+            border-bottom-style:solid;
+         }
         #Line{
              position:relative;
                         left:5%;
@@ -222,7 +237,7 @@
                 }
                 .prices-background {background:rgb(30,94,60);
                      width:100%; 
-                     height:1080px;
+                     height:980px;
                      position:relative;
                      top:130px;
                      left:0%;
@@ -232,15 +247,14 @@
                     }
                  #prices{
                         position:relative;
-                        left:43%;
                         font-style:italic;
                         font-weight:bold;
                         text-decoration:underline;
-                        margin-right:55%;
+                        
                     }
                  #prices-info {
                      position:relative;
-                     top:90px;
+                     top:0px;
                      left:5%;
                      z-index:7;
                      margin-left:1%;
@@ -251,12 +265,8 @@
                       
                      
                  }
-                 a:link {
-    background-color: green;
-        }
-        a:hover { background-color:blue;
-             
-         }
+                 
+
            @media only screen and (min-width: 481px) and (max-width: 560px), (min-resolution: 150dpi) {
                
                /* Break-points */
@@ -325,12 +335,8 @@
                         left:34%;
                         top:79px;
                     }
-                    a:link {
-    background-color: green;
-        }
-        a:hover { background-color:blue;
-             
-         }
+                    
+        
            }
            @media only screen and (min-width: 561px) and (max-width: 620px), (min-resolution: 150dpi) {
                
@@ -400,11 +406,7 @@
                         left:34%;
                         top:79px;
                     }
-                    a:link {
-    background-color: green;
-        }
-        a:hover { background-color:blue;
-             
-         }
+                    
+        
            }
 

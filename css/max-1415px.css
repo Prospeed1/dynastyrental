@@ -37,6 +37,20 @@
             font-weight:bold;
             font-size:1.1em;
         }
+        figure {
+            width:10%;
+            margin-top:0px;
+            position:relative;
+            top:-395px;
+            left:0px;
+        }
+        .booth-types {
+             
+            position:relative;
+            width:100%;
+            border-top-style:solid;
+            border-bottom-style:solid;
+         }
        #Line {
             position:relative;
             left:20%;
@@ -195,9 +209,7 @@
                         width:44px;
                         
                     }
-                    a:hover{
-                        background:white;
-                    }
+                    
                    
             .warn {
                         color:red;
@@ -236,12 +248,8 @@
                      margin-right:50%;
                        
                  }
-                 a:link {
-    background-color: green;
-        }
-        a:hover { background-color:blue;
-             
-         }
+                 
+        
           body { background:rgb(243,134,48);
         
             
@@ -441,9 +449,7 @@
                         width:44px;
                         
                     }
-                    a:hover{
-                        background:white;
-                    }
+                   
                    
             .warn {
                         color:red;
@@ -481,9 +487,5 @@
                      margin-right:50%;
                        
                  }
-                 a:link {
-    background-color: green;
-        }
-        a:hover { background-color:blue;
-             
-         }
+                 
+        

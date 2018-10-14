@@ -6,11 +6,11 @@
        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" type="text/css"> 
        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <link rel="stylesheet" type="text/css" href="./css/index.css">          
+               <link rel="stylesheet" type="text/css" href="./css/index.css">         
                <link rel="stylesheet" media="(max-width: 375px)" href="./css/max-375px.css">
                <link rel="stylesheet" media="(min-width: 376px) and (max-width: 480px)" href="./css/max-480px.css">
-               <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1007px)" href="./css/max-769px.css">
-                <link rel="stylesheet" media="(min-width: 770px) and (max-width: 1415px)" href="./css/max-1024px.css">
+               <link rel="stylesheet" media="(min-width: 481px) and (max-width: 769px)" href="./css/max-769px.css">
+                <link rel="stylesheet" media="(min-width: 770px) and (max-width: 1440px)" href="./css/max-1440px.css">
                
                   
 
@@ -46,6 +46,32 @@
             x[myIndex-1].style.display = "block";  
             setTimeout(carousel, 9000);    
         }
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}   
         
     
         </script>
@@ -80,13 +106,21 @@
         <p class="order-info">We at <strong>DynastyRentals™ </strong> offer products 
         that will spice up your events, Not only that but we <strong>deliver, set-up,</strong>
         and <strong>retrieve</strong> them when your done!. Products such as <br><strong>
-            <a href="#prices">• Photo-booths</a> </strong><br><strong>
-                <a href="./dancefloor.html">• Portable dance-floors</a> </strong>  <br><br><br>Unfortunately we are only operating in the <strong class="warn"> N.Y.C boroughs ( Bronx, Manhattan, Brooklyn, Queens, Staten Island), New Jersey, and the Westchester Counties</strong> for now. However we are sure to expand our business. Be sure to follow our social media pages for info on our progress :) </p>
+            <a href="#prices"><strong>• Photo-booths</strong> - High Quality, customizable templates, unlimited prints, online gallery and more!</a> </strong><br><strong>
+                <a href="./dancefloor.html"><strong>• Portable dance-floors</strong>- Up to 20 x 20 floor that can be placed anywhere</a>  <br><br><br>Unfortunately we are only operating in the <strong class="warn"> N.Y.C boroughs ( Bronx, Manhattan, Brooklyn, Queens, Staten Island), New Jersey, and the Westchester Counties</strong> for now. However we are sure to expand our business. Be sure to follow our social media pages for info on our progress :) </p>
         <div class="prices-background"><h1 id="prices"><a>Photo-booth</a></h1>
        
        
-         <p id="prices-info">We offer a photo-booth which has 4 functions:<br> 1) Sit-down booth with monitor <br> 2) Stand-up booth with monitor <br>3) Enclosed booth <br>4) Open air booth.<br><br> <br> <br> <br>   Thank you, have a fantastic rest of the day :P</p></div>
-
+         <p id="prices-info">We offer a photo-booth which has 2 functions: <br>1) Open air booth. <br>2) Enclosed booth</p></div>
+         <figure>
+         <img class="booth-types" src="./img/IMG_3868 (1).jpg">
+         <figcaption>Open-Air Booth</figcaption>
+         </figure>
+         <figure>
+         <img class="booth-types" src="./img/IMG_3830 (1).jpg">
+         <figcaption>Closed-Air Booth</figcaption>
+         </figure>
+         
 </body>
 
 </html>
